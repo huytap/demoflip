@@ -1,0 +1,110 @@
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+ <div class="flipper">
+   <div class="front">
+     <span class="name">David Walsh</span>
+   </div>
+   <div class="back">
+     <div class="back-logo"></div>
+     <div class="back-title">@davidwalshblog</div>
+     <p>Mozilla Web Developer, MooTools & jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+   </div>
+ </div>
+</div>
+<style>
+.flip-container {
+ -webkit-perspective: 1000;
+ -moz-perspective: 1000;
+ -o-perspective: 1000;
+ perspective: 1000;
+    border: 1px solid #ccc;
+}
+    .flip-container:hover .flipper,
+ .flip-container.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+.flip-container, .front, .back {
+    width: 375px;
+    height: 667px;
+}
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+ -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+ -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    background: url(https://lh3.googleusercontent.com/82ZyfBMMvr5BzNecj3FM1CcXaP09KTrWaMHIsbHPw8Zeyn9hZSGV53p2-jkKI7zxqQWHPvE25aqRzm7eNXl_dVd7QXdTdxJykN7ExqH6_5YAKzYGh-RoaYLZK96PksdVYPr1-IdKXF57vyQG8tQjdIOH6nExtz7PlbZm64ymld4p108otxX-Z8ctTV6AtFKMXAk1tIXrCTOjlvi6zTe-movm2kBOb1eRNxqDJMGB3UdgFEhu-leLIxAdPVFVH227n_vAsIYO8pKBrGqsjbBisDb3NUcuUWNgLsWsrF8_WeXmlX1mZHZB6y2siX-ArhfYrvz8HZjTeZljoXSuTMivKWsyYGljLTkq2M3UMFnilXWmMvFszBlhbzMFy8-xBEx4B6q4PiYhgIXl_SX3Rd9BQlX6OscVkVyfr1QEixXJuFTjCt9eiAFalbAv7cA5twxyO1-nBOuEzmQH2W9BsD59UzocMKCuJ_y6VyE4W9lpwfjBHGpOByOBTVLnP2UStq2C91C6ih9Tsz4So7BUPYaDKkO9PCjNGHhM-2OKv1THZAgwJo4-p2kLOCOPCtqCNGTRR5zxRDzyK0UqjH-1AusEfAMlrEZ8zfN6bbA7ctHjdC5ea8OQjBdAGyxQ4B1mwYefpbg0y54zfXB9hmdKmOhFymT6jCchc_IlcJvjspe2fm5MFajN_sGEHA=w375-h667-no) 0 0 no-repeat;
+    z-index: 2;
+}
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+ -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: #f8f8f8;
+}
+.front .name {
+    font-size: 2em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.9);
+    color: #f8f8f8;
+    font-family: Courier;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 25%;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+ -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.back-logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 375px;
+    height: 667px;
+    background: url(https://lh3.googleusercontent.com/3JXUAJFAV0IYCPJYCH8anHpUBkDbe_b-Ozc7eHRryngPWLpHrrm0JGFYZN32TaE0sShbYUSfdHHWUQ0JAtQvagGWdVQRiu87CtcOD4zLSrjfpjotFhOVCao2lQPVzKLDRvadmC4GucYaeuTfglgCQJJTz46wDV9_iDbAQ7RpEpPkMWh2aRade7yMLj_AMGEVtxP8mvbG0ZyQqdSk7NjAgBx1QLBrXT5D1FqWqRO3Ax_l7Ji3fSA3aNsul2DTJLPA6TV5XlzS6nREGACoeqDhdYJUDoNKWIITSd0R5hv-s1G5eKUfBOkbOiCm_7hGOFkGBSQXatzt-vmjuiqAMzHF9-Q7m3S3aJPiy9A43vT8NMxC86j53VBODDLFNA4EKzHnOg16FvnStfONxcT3rp_rn24kj6F3I_5dfq19ifF7a1iK-Ko_PXzlv84X-3Y_3jJhnqrLxGQrUOI0SThQdJJvvAxbUm-Zk58o6TEQZO3kI5-nx-Arb59xD9F4mSdHe7LO1WhbVY5kc_xqUocpSAQuuKI0bmBVX1-2sDtS5K3m2jlGXh4eAzH416YYT8X_X6LIndAcwKjI8muyU9IJcZpxvK8mlL-evzWQ-P2O6gNAAH0zVxbeWX0Zaqin6z8Mr2LABwin3uuY4MivbL7ut4vIu9rvcphmh2eeA4Epp0_CJtJ_ZzlMm7XL0w=w375-h667-no) 0 0 no-repeat;
+}
+.back-title {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+.back p {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+ font-family: arial;
+ line-height: 2em;
+}
+</style>
